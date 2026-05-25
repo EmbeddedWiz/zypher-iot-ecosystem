@@ -1,0 +1,19 @@
+# Wi-Fi Credentials (Security)
+common/include/wifi_credentials.hpp
+
+# ESP32 Build folders
+ESP32_Slave/build/
+ESP32_Slave/managed_components/
+
+# Android Build folders
+Androind_Ctrl/.gradle/
+Androind_Ctrl/app/build/
+Androind_Ctrl/build/
+Androind_Ctrl/local.properties
+Androind_Ctrl/.idea/
+
+# OS files
+.DS_Store
+.gitignore
+.idea
+Thumbs.db

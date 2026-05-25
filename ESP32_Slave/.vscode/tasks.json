@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "openocd",
+      "type": "shell",
+      "command": "C:\\Espressif\\tools\\openocd-esp32\\v0.12.0-esp32-20251215\\openocd-esp32\\bin\\openocd.exe",
+      "args": [
+        "-f",
+        "board/esp32s3-builtin.cfg"
+      ],
+      "isBackground": true,
+
+      "problemMatcher": {
+        "pattern": [
+          {
+            "regexp": ".*",
+            "file": 1,
+            "location": 2,
+            "message": 3
+          }
+        ],
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".*Listening on port 3333.*",
+          "endsPattern": ".*Listening on port 3333.*"
+        }
+      }
+    }
+  ]
+}
